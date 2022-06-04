@@ -504,7 +504,7 @@ def loop_principal():
             print('\t', 'La racha del croupier es: ', acumula_racha, 'manos seguidas')
             print('\t', 'La cantidad de manos con BlackJack Natural fueron: ', manos_bn)
             print('\t', 'La cantidad maxima que tuvo el jugador en el pozo es: ', mayor, '$')
-            print('\t', 'El monto promedio del que dispuso el jugador para realizar apuestas fue de: ', str(promedio), '$ dado que no aposto')
+            print('\t', 'El monto promedio del que dispuso el jugador para realizar apuestas fue de: ', str(promedio), '$')
             if mayor_apuesta != 0:
                 print('La pérdida más grande que sufrió el jugador (en moneda) fue: ', mayor_apuesta)
             else:
