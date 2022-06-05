@@ -133,7 +133,7 @@ def loop_principal():
             print('Se eligio la primer opcion')
 
             apuesta_a_agregar_pozo = apostar()
-            print('*'*21, 'Usted Agrega', apuesta_a_agregar_pozo, '$ a su pozo', '*'*21)
+            print('*' * 21, 'Usted Agrega', apuesta_a_agregar_pozo, '$ a su pozo', '*' * 21)
             monto += apuesta_a_agregar_pozo
             print('*' * 21, 'Su pozo actual es de', monto, '$', '*' * 21)
 
@@ -373,7 +373,7 @@ def loop_principal():
                     print('-' * 21, 'Su Monto Actual es de:', monto, '$', '-' * 21)
                     racha_croupier = False
 
-                # El jugador tiene mayr puntuacion pero es mayor a 21
+                #El jugador tiene mayr puntuacion pero es mayor a 21
                 elif (puntuacion_jugador > puntuacion_croupier) and puntuacion_jugador > 21:
                     print('-' * 21, 'Intenta Nuevamente el ganador es el Croupier!!!!', '-' * 21)
                     ganancias_croupier = apuesta_juego
@@ -410,7 +410,6 @@ def loop_principal():
                     print('-' * 21, 'Su Monto Actual es de:', monto, '$', '-' * 21)
                     racha_croupier = False
 
-
                 # Pozo Mayor:
                 if monto > mayor:
                     mayor = monto
@@ -443,7 +442,8 @@ def loop_principal():
             print('\t', 'La racha del croupier es: ', acumula_racha, 'manos seguidas')
             print('\t', 'La cantidad de manos con BlackJack Natural fueron: ', manos_bn)
             print('\t', 'La cantidad maxima que tuvo el jugador en el pozo es: ', mayor, '$')
-            print('\t', 'El monto promedio del que dispuso el jugador para realizar apuestas fue de: ', str(promedio), '$')
+            print('\t', 'El monto promedio del que dispuso el jugador para realizar apuestas fue de: ', str(promedio),
+                  '$')
             if mayor_apuesta != 0:
                 print('La pérdida más grande que sufrió el jugador (en moneda) fue: ', mayor_apuesta)
             else:
@@ -455,5 +455,6 @@ def loop_principal():
                 porcentaje_victorias = porcen_vict(cant_partidos, cant_victorias_jugador)
                 print('*' * 21, 'Porcentaje de victorias de', player, str(porcentaje_victorias), '%', '*' * 21)
 
-#LLamada a la funcion principal
+
+# LLamada a la funcion principal
 loop_principal()
