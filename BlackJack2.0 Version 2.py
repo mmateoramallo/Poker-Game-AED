@@ -9,7 +9,7 @@ def bienvenido():
 
     nombre = input('Ingrese su nombre: ')
 
-    monto = int(input('Ingrese un monto a su pozo para inciar la partida: '))
+    monto = int(input('Ingrese un monto a su pozo para inciar la partida menor a $100000: '))
 
     if nombre == " ":
         nombre = input('Ingrese su nombre ¡Correctamente!!: ')
