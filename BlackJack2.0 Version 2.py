@@ -401,14 +401,6 @@ def loop_principal():
                     print('-' * 21, 'Su Monto Actual es de:', monto, '$', '-' * 21)
                     racha_croupier = False
 
-                elif puntuacion_jugador > 21 and puntuacion_croupier > 21:
-
-                    print('-' * 21, 'Ambos Se fueron mas de 21 puntos, vuelve a jugar!!', '-' * 21)
-                    ganancias = apuesta_juego
-                    monto += apuesta_juego
-                    print('-' * 21, 'Sus ganancias son: ', ganancias, '$', '-' * 21)
-                    print('-' * 21, 'Su Monto Actual es de:', monto, '$', '-' * 21)
-                    racha_croupier = False
 
 
                 # Pozo Mayor:
